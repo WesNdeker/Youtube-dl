@@ -45,6 +45,6 @@ yt = YouTube(url);
 print("Title: ",yt.title);
 yts = yt.streams.get_highest_resolution()
 print("\nDownloading...")
-yts.download('cd /sdcard/DCIM')
+yts.download()
 print("\nDownload completed!!")
 print()
