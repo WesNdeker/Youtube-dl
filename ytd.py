@@ -4,6 +4,7 @@
 import csv
 import os
 import sys
+import system
 import time
 os.system("clear")
 print ("\33[37;1m[*]Welcome To My Tools");
@@ -12,8 +13,10 @@ time.sleep (2);
 #Jadi Jangan Direcode Ya Asu!!
 print ("\33[31;1m[*]wait a few minutes for the fixing of the material :D ");
 time.sleep(2);
-os.sytem("pip install -U pip");
-os.sytem("pip install pytube");
+os.system("pkg install pip");
+os.system("pip install -U pip");
+os.system("pip install pytube");
+os.system("termux-setup-storage");
 print ("\33[33;1m==>Thx For Install My Tools");
 time.sleep(4);
 os.system("clear")
@@ -42,6 +45,6 @@ yt = YouTube(url);
 print("Title: ",yt.title);
 yts = yt.streams.get_highest_resolution()
 print("\nDownloading...")
-yts.download()
+yts.download('cd /sdcard/DCIM')
 print("\nDownload completed!!")
 print()
